@@ -1,2 +1,5 @@
+.DS_Store
 _drafts
 _site
+stylesheets/blueprint/*
+!stylesheets/blueprint/*.css
