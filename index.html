@@ -1,0 +1,27 @@
+---
+layout: default
+title: jacobswanner.com
+---
+
+<div class="entry">
+  {% for post in site.posts %}
+    {% if forloop.first %}
+      <h2>{{ post.title }}</h2>
+      {{ post.content }}
+    {% endif %}
+  {% endfor %}
+</div>
+<div id="past">
+  <h3>past posts</h3>
+  <ul>
+    <li><a href="#">Lorem Ipsum, or Lipsum for short</a></li>
+    <li><a href="#">Lorem Ipsum, or Lipsum for short</a></li>
+    <li><a href="#">Lorem Ipsum, or Lipsum for short</a></li>
+    <li><a href="#">Lorem Ipsum, or Lipsum for short</a></li>
+    <li><a href="#">Lorem Ipsum, or Lipsum for short</a></li>
+    <li><a href="#">Lorem Ipsum, or Lipsum for short</a></li>
+    <li><a href="#">Lorem Ipsum, or Lipsum for short</a></li>
+    <li><a href="#">Lorem Ipsum, or Lipsum for short</a></li>
+  </ul>
+</div>
+

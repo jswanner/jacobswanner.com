@@ -1,0 +1,15 @@
+---
+layout: post
+title: screencasts and blip.tv
+---
+So, I've been kicking around the idea of making some screencasts for some time.  When I did my last presentation at [ORUG](http://orug.org), instead of doing a live demo, I used pre-recorded videos; I did this for a couple reasons, one to tip my toes in screencasts and two, instead of everyone there having to suffer through the mistakes I would inevitably make, I could edit out all my mistakes.
+
+I always intended to put those videos online somewhere, but never did.  Main reason was that those videos were intended for use at a presentation, and therefore did not include audio to explain what I was doing; because, I explained what was happening in the videos in the presentation. /rant
+
+Fast forward to today, I still haven't made any other screencasts and my blog has been fairly stagnant as well.  I'm hoping to change both of those problems.  I have some ideas for screencasts and how I want to make them.  In order to make the screencasts the way I want to I need new software. So, I made a test screencast using a demo version of an application [(ScreenFlow)](http://www.telestream.net/screen-flow/overview.htm), and then uploaded it to [blip.tv](http://jswanner.blip.tv/#1581059) to see how it would look.  Below is an embed of the same video.  So, hopefully I'll get off my butt and actually make the real screencasts I've been rambling about.
+
+<object type="application/x-shockwave-flash" data="http://blip.tv/scripts/flash/showplayer.swf?enablejs=true&file=http%3A//blip.tv/rss/flash/1581059&feedurl=http%3A//jswanner.blip.tv/rss/&autostart=false&brandname=jacob%20swanner&brandlink=http%3A//jswanner.blip.tv/" width="540" height="360" allowfullscreen="true" id="showplayer"><param name="movie" value="http://blip.tv/scripts/flash/showplayer.swf?enablejs=true&file=http%3A//blip.tv/rss/flash/1581059&feedurl=http%3A//jswanner.blip.tv/rss/&autostart=false&brandname=jacob%20swanner&brandlink=http%3A//jswanner.blip.tv/" /><param name="quality" value="best" /></object>
+
+﻿Update:  After creating the last video and making the blog post, I realized that the makers of iShowU make a new product, [iShowU HD](http://www.shinywhitebox.com/ishowuhd/main.html), which does allow me to use iSight to add a video of myself.  Below is an embed to a video using that software.
+
+<object type="application/x-shockwave-flash" data="http://blip.tv/scripts/flash/showplayer.swf?enablejs=true&file=http%3A//blip.tv/rss/flash/1581349&feedurl=http%3A//jswanner.blip.tv/rss/&autostart=false&brandname=jacob%20swanner&brandlink=http%3A//jswanner.blip.tv/" width="540" height="360" allowfullscreen="true" id="showplayer"><param name="movie" value="http://blip.tv/scripts/flash/showplayer.swf?enablejs=true&file=http%3A//blip.tv/rss/flash/1581349&feedurl=http%3A//jswanner.blip.tv/rss/&autostart=false&brandname=jacob%20swanner&brandlink=http%3A//jswanner.blip.tv/" /><param name="quality" value="best" /></object>

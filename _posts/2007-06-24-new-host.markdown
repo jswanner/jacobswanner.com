@@ -1,0 +1,5 @@
+---
+layout: post
+title: new host
+---
+I switched to a new hosting company, ([slicehost](http://slicehost.com)).  It's a little bit more than I was paying before, but has double the memory, along with other pluses.  I've only been using their services for a few days, but I'm already glad that I switched.

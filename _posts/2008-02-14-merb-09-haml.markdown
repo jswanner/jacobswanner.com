@@ -1,0 +1,23 @@
+---
+layout: post
+title: merb 0.9 & haml
+---
+I'm currently playing around w/ [merb](http://merbivore.com/) 0.9, and using [haml](http://haml.hamptoncatlin.com/).  Trust me things are not starting off super smoothly.  But, I am enjoying using something new, something that's changing daily; reminds me of when I first started using Rails, and all the frustration of not being able to figure something out, followed by the joy when it worked.
+
+That said, there will probably be quite of few posts dealing with all the things that hang me up along the way, so that I have a place to come back to in the future to find the answers.
+
+It appears as though there used to be a file called dependencies.rb (before I tried Merb).  In this file you'd specify what dependencies your app needed, using something like:
+
+    dependencies "RedCloth", "merb_helpers"
+or
+
+    dependency "RedCloth"
+
+That was changed, and would then declare your app's dependencies in `config/init.rb`.  Apparently, since yesterday that has changed again slightly.  You still declare your dependencies in `config/init.rb`, but instead of going in the body of the file, it now goes in the `after_app_loads` code block, as such:
+
+    Merb::BootLoader.after_app_loads do
+      ### Add dependencies here that must load after the application loads:
+      require "merb-haml"
+    end
+
+Some might have noticed that you no longer call the `dependency` method, but just plain old `require`.

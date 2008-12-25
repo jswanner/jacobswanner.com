@@ -1,0 +1,18 @@
+# refer to http://www.yaml.org/spec/1.1/ for clarification on YAML collections
+giverous:
+  path: /Users/jswanner/Sites/fun/santa2/css/blueprint/
+  custom_css:
+    screen.css:
+      - blueprint/my-screen.css
+  css_files:
+    screen.css:
+      - reset.css
+      - typography.css
+      - forms.css
+    print.css:
+      - print.css
+    ie.css:
+      - ie.css
+  plugins:
+    - fancy-type
+    - buttons

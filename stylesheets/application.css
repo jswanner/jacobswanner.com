@@ -1,0 +1,40 @@
+body{
+	color: #333;
+	font-size: .8em;
+	margin: 0 auto;
+	width: 80%;
+}
+h1, h2, h3, h4, h5, h6{
+	color: #630;
+	margin: 0;
+	padding: 0;
+}
+a, a:hover, a:visited, a:active{
+	color: #960;
+}
+#header{
+	margin: 2em 0;
+}
+	#header > h3{
+		float: right;
+	}
+#content{
+}
+	#content > #past{
+		font-size: 1.4em;
+		margin: 4em 0;
+	}
+		#content > #past li{
+			margin: .5em 0;
+		}
+		#content > #past a{
+			color: #630;
+		}
+#footer{
+	color: #630;
+}
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
