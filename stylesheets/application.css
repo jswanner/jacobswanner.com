@@ -1,6 +1,6 @@
 body{
 	color: #333;
-	font-size: .8em;
+	font-size: .9em;
 	margin: 0 auto;
 	width: 80%;
 }
@@ -9,8 +9,16 @@ h1, h2, h3, h4, h5, h6{
 	margin: 0;
 	padding: 0;
 }
-a, a:hover, a:visited, a:active{
+a, a:visited, a:active{
 	color: #960;
+}
+a:hover{
+	color: #000;
+}
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 #header{
 	margin: 2em 0;
@@ -20,21 +28,20 @@ a, a:hover, a:visited, a:active{
 	}
 #content{
 }
-	#content > #past{
-		font-size: 1.4em;
-		margin: 4em 0;
+	#content > #archive{
+		margin: 2em 0;
 	}
-		#content > #past li{
-			margin: .5em 0;
+		#content > #archive li{
+			margin: .2em 1em;
 		}
-		#content > #past a{
+		#content > #archive a{
 			color: #630;
+			font-size: 1.2em;
 		}
 #footer{
 	color: #630;
 }
-ul{
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+span.date{
+	color: #666;
+	font-size: .8em;
 }
