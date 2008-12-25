@@ -38,6 +38,9 @@ ul{
 			color: #630;
 			font-size: 1.2em;
 		}
+		#content > #archive a:hover{
+			color: #000;
+		}
 #footer{
 	color: #630;
 }
