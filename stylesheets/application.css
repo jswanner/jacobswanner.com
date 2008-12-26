@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6{
 	padding: 0;
 }
 a, a:visited, a:active{
-	color: #960;
+	color: #630;
 }
 a:hover{
 	color: #000;
@@ -23,28 +23,39 @@ ul{
 #header{
 	margin: 2em 0;
 }
+	#header a{
+		text-decoration: none;
+	}
 	#header > h3{
 		float: right;
 	}
 #content{
 }
-	#content > #archive, #content > #projects{
+	#content > #archive, #content > #projects, #content > #tweets{
 		margin: 0 0 2em 0;
 	}
-		#content > #archive li, #content > #projects li{
+		#content > #archive li, #content > #projects li, #content > #tweets li{
 			margin: .2em 1em;
 		}
-		#content > #archive a, #content > #projects a{
-			color: #630;
-			font-size: 1.2em;
-		}
-		#content > #archive a:hover, #content > #projects a:hover{
-			color: #000;
-		}
-#footer{
-	color: #630;
+.entry{
+	margin: 0 0 2em 0;
 }
+	.entry a{
+		color: #960;
+	}
+	.entry a:hover{
+		color: #000;
+	}
+	.entry h2 a{
+		color: #630;
+	}
+	.entry h2 a:hover{
+		color: #000;
+	}
 span.date{
 	color: #666;
 	font-size: .8em;
+}
+#footer{
+	color: #630;
 }

@@ -3,37 +3,49 @@ layout: default
 title: jacobswanner.com
 ---
 <script type="text/javascript" src="javascripts/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="javascripts/jquery.strftime-minified.js"></script>
 <script type="text/javascript">
-  jQuery(function($) {
-    var limit = 10;
-    var login = 'jswanner';
+jQuery(function($){
+  var limit = 10;
+  var login = 'jswanner';
 
-    $.getJSON('http://github.com/api/v1/json/' + login + '?callback=?', function(data) {
-      var repos = $.grep(data.user.repositories, function() {
-        return !this.fork
-      });
+  $.getJSON('http://github.com/api/v1/json/'+ login +'?callback=?', function(data){
+    var repos = $.grep(data.user.repositories, function(){
+      return !this.fork
+    });
 
-      repos.sort(function(a, b) {
-        return b.watchers - a.watchers
-      });
+    repos.sort(function(a, b){
+      return b.watchers - a.watchers
+    });
 
-      $.each(repos.slice(0, limit), function() {
-        console.log(this.name);
-        $('#projects').append('<li><a href="' + this.url + '">' + this.name + '</a></li>');
-      });
+    $.each(repos.slice(0, limit), function(){
+      $('#projects').append('<li><a href="'+ this.url +'">'+ this.name +'</a></li>');
     });
   });
+  
+  $.getJSON('http://twitter.com/statuses/user_timeline/'+ login +'.json?count='+ limit +'&callback=?', function(tweets){
+    $.each(tweets, function(){
+      var url = 'http://twitter.com/'+ login +'/status/'+ this.id;
+      $('#tweets')
+        .append('<li><a href="'+ url +'">'+ this.text +'</a> <span class="date">'+ $.strftime('%d %b %Y %H:%M', new Date(this.created_at)) +'</span></li>');
+    });
+  });
+});
 </script>
 <div class="entry">
   {% for post in site.posts limit:1 %}
-    <h2>{{ post.title }}</h2>
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <span class="date">{{ post.date | date: '%d %b %Y' }}</span>
     {{ post.content }}
   {% endfor %}
 </div>
+
+<h3>tweets</h3>
+<ul id="tweets"></ul>
+
 <h3>projects</h3>
-<ul id="projects">
-</ul>
+<ul id="projects"></ul>
+
 <h3>archive</h3>
 <ul id="archive">
   {% for post in site.posts offset:1 %}
