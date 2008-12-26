@@ -28,17 +28,17 @@ ul{
 	}
 #content{
 }
-	#content > #archive{
-		margin: 2em 0;
+	#content > #archive, #content > #projects{
+		margin: 0 0 2em 0;
 	}
-		#content > #archive li{
+		#content > #archive li, #content > #projects li{
 			margin: .2em 1em;
 		}
-		#content > #archive a{
+		#content > #archive a, #content > #projects a{
 			color: #630;
 			font-size: 1.2em;
 		}
-		#content > #archive a:hover{
+		#content > #archive a:hover, #content > #projects a:hover{
 			color: #000;
 		}
 #footer{
