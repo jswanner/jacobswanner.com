@@ -44,8 +44,8 @@ jQuery(function($){
 <ul id="archive">
   {% for post in site.posts offset:1 %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
       <span class="date">{{ post.date | date: '%d %b %Y' }}</span>
+      <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
   {% endfor %}
 </ul>

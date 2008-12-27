@@ -65,6 +65,7 @@ ul{
 }
 span.date{
 	color: #666;
+	font-family: 'andale mono', 'lucida console', monospace;
 	font-size: .8em;
 }
 #footer{
