@@ -2,7 +2,7 @@
 layout: post
 title: screencasts and blip.tv
 ---
-So, I've been kicking around the idea of making some screencasts for some time.  When I did my last presentation at [ORUG](http://orug.org), instead of doing a live demo, I used pre-recorded videos; I did this for a couple reasons, one to tip my toes in screencasts and two, instead of everyone there having to suffer through the mistakes I would inevitably make, I could edit out all my mistakes.
+So, I've been kicking around the idea of making some screencasts for some time.  When I did my last presentation at [ORUG](http://orug.org), instead of doing a live demo, I used pre-recorded videos; I did this for a couple reasons, one to dip my toes in screencasts and two, instead of everyone there having to suffer through the mistakes I would inevitably make, I could edit out all my mistakes.
 
 I always intended to put those videos online somewhere, but never did.  Main reason was that those videos were intended for use at a presentation, and therefore did not include audio to explain what I was doing; because, I explained what was happening in the videos in the presentation. /rant
 
