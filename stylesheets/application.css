@@ -42,31 +42,32 @@ ul{
 	}
 #content{
 }
-	#content > #archive, #content > #projects, #content > #tweets{
-		margin: 0 0 2em 0;
+	#content >  h3.section_header{
+		margin: 2em 0 0 0;
 	}
-		#content > #archive li, #content > #projects li, #content > #tweets li{
+		#content > h3.section_header + ul > li{
 			margin: .2em 1em;
 		}
-.entry{
-	margin: 0 0 2em 0;
+.entry .entry_content{
+	margin: 0 1em;
 }
-	.entry a{
-		color: #960;
-	}
-	.entry a:hover{
-		color: #000;
-	}
-	.entry h2 a{
-		color: #630;
-	}
-	.entry h2 a:hover{
-		color: #000;
-	}
+.entry a{
+	color: #960;
+}
+.entry a:hover{
+	color: #000;
+}
+.entry h2 a{
+	color: #630;
+}
+.entry h2 a:hover{
+	color: #000;
+}
 span.date{
 	color: #666;
 	font-size: .8em;
 }
 #footer{
+	margin: 1em 0;
 	color: #630;
 }

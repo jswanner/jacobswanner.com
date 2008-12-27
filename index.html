@@ -22,31 +22,25 @@ jQuery(function($){
       $('#projects').append('<li><a href="'+ this.url +'">'+ this.name +'</a></li>');
     });
   });
-  
-  $.getJSON('http://twitter.com/statuses/user_timeline/'+ login +'.json?count='+ limit +'&callback=?', function(tweets){
-    $.each(tweets, function(){
-      var url = 'http://twitter.com/'+ login +'/status/'+ this.id;
-      $('#tweets')
-        .append('<li><a href="'+ url +'">'+ this.text +'</a> <span class="date">'+ $.strftime('%d %b %Y %H:%M', new Date(this.created_at)) +'</span></li>');
-    });
-  });
 });
 </script>
 <div class="entry">
   {% for post in site.posts limit:1 %}
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <span class="date">{{ post.date | date: '%d %b %Y' }}</span>
-    {{ post.content }}
+    <div class="entry_content">
+      {{ post.content }}
+    </div>
   {% endfor %}
 </div>
 
-<h3>tweets</h3>
-<ul id="tweets"></ul>
+<h3 class="section_header">tweets</h3>
+<ul id="twitter_update_list"></ul>
 
-<h3>projects</h3>
+<h3 class="section_header">projects</h3>
 <ul id="projects"></ul>
 
-<h3>archive</h3>
+<h3 class="section_header">archive</h3>
 <ul id="archive">
   {% for post in site.posts offset:1 %}
     <li>
@@ -55,4 +49,6 @@ jQuery(function($){
     </li>
   {% endfor %}
 </ul>
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/jswanner.json?callback=twitterCallback2&amp;count=10"></script>
 
