@@ -1,1 +1,1 @@
-just the repo for my blog, which can be found at http://jacobswanner.com
+just the repo for my blog, which can be found at [http://jacobswanner.com](http://jacobswanner.com)
