@@ -1,6 +1,6 @@
 ---
 layout: post
-title: merb 0.9 & haml
+title: merb 0.9 &amp; haml
 ---
 I'm currently playing around w/ [merb](http://merbivore.com/) 0.9, and using [haml](http://haml.hamptoncatlin.com/).  Trust me things are not starting off super smoothly.  But, I am enjoying using something new, something that's changing daily; reminds me of when I first started using Rails, and all the frustration of not being able to figure something out, followed by the joy when it worked.
 
