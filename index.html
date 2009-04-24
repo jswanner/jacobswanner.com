@@ -4,24 +4,26 @@ title: jacobswanner.com
 ---
 <script type="text/javascript" src="javascripts/jquery-1.2.6.min.js"></script>
 <script type="text/javascript">
-jQuery(function($){
-  var limit = 10;
-  var login = 'jswanner';
+  //<![CDATA[
+  jQuery(function($){
+    var limit = 10;
+    var login = 'jswanner';
 
-  $.getJSON('http://github.com/api/v1/json/'+ login +'?callback=?', function(data){
-    var repos = $.grep(data.user.repositories, function(){
-      return !this.fork
-    });
+    $.getJSON('http://github.com/api/v1/json/'+ login +'?callback=?', function(data){
+      var repos = $.grep(data.user.repositories, function(){
+        return !this.fork
+      });
 
-    repos.sort(function(a, b){
-      return b.watchers - a.watchers
-    });
+      repos.sort(function(a, b){
+        return b.watchers - a.watchers
+      });
 
-    $.each(repos.slice(0, limit), function(){
-      $('#projects').append('<li><a href="'+ this.url +'">'+ this.name +'</a></li>');
+      $.each(repos.slice(0, limit), function(){
+        $('#projects').append('<li><a href="'+ this.url +'">'+ this.name +'</a></li>');
+      });
     });
   });
-});
+  //]]>
 </script>
 <div class="entry">
   {% for post in site.posts limit:1 %}
