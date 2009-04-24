@@ -19,7 +19,7 @@
   <body>
     <div id="header">
       <h1><a href="/">random ramblings</a></h1>
-      <h3>err on the side of learning<h3>
+      <h3>err on the side of learning</h3>
     </div>
     <div id="content">
       {{ content }}
@@ -27,15 +27,14 @@
     <div id="footer">
       &copy;2008 jacob swanner | local_part = &quot;jacob&quot;; domain = &quot;jacobswanner.com&quot;; email_address = &quot;#{local_part}@#{domain}&quot;
     </div>
+    <script type="text/javascript" src="http://www.google-analytics.com/ga.js"></script>
     <script type="text/javascript">
-      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
+      //<![CDATA[
       try {
         var pageTracker = _gat._getTracker("UA-7325596-2");
         pageTracker._trackPageview();
       } catch(err) {}
+      //]]>
     </script>
   </body>
 </html>
